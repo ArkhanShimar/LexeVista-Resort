@@ -2,6 +2,8 @@
 
 The *LuxeVista Resort* Android application is a comprehensive hospitality management system developed using *Java* and *XML* in *Android Studio. Integrated with **Firebase Realtime Database*, the app enhances guest experience and supports resort operations by offering seamless booking, service management, and personalized notifications.
 
+Project Demo
+[▶ Watch the Demo Video](https://drive.google.com/your-demo-link](https://drive.google.com/file/d/1jvIYQLKU6ZuEEPd0CN9NOok7tTqn-SR7/view?usp=sharing))
 ---
 
 ## 🌟 Features
