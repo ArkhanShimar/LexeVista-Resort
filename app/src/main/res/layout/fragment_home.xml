@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true">
+
+    <!-- App Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar_gradient_bg"
+        android:paddingTop="32dp"
+        android:paddingBottom="16dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LuxeVista Resort"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingBottom="72dp">
+
+            <!-- Welcome Banner -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="18dp"
+                android:backgroundTint="@android:color/transparent"
+                android:elevation="12dp"
+                app:cardCornerRadius="28dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/welcome_gradient_bg"
+                    android:padding="24dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_launcher_round"
+                        android:contentDescription="Welcome Icon"
+                        android:layout_marginEnd="18dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Welcome to LuxeVista!"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="32dp"
+                            android:layout_height="2dp"
+                            android:background="@color/colorAccent"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Experience luxury, comfort, and unforgettable moments."
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:alpha="0.85"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Rooms Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rooms"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Services Section -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_rooms_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In-House Services"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_services_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+
+            <!-- Special Offers Heading -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Special Offers"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="8dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_offers_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+
+            <!-- Resort Info Section -->
+            <TextView
+                android:id="@+id/about_resort_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_resort"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:background="@color/colorCard"
+                android:padding="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="0dp"
+                android:elevation="2dp"
+                android:textStyle="normal"
+                android:autoLink="email|phone"
+                android:linksClickable="true"
+                android:textIsSelectable="true"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Extra space for nav bar -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+<!--
+Replace @android:drawable/ic_menu_gallery with your own images for a luxury look.
+--> 

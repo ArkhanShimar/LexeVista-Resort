@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LuxeVista Resort</string>
+    <string name="about_resort"><![CDATA[
+<b>About LuxeVista Resort</b><br/><br/>
+Nestled on the pristine coastline, <b>LuxeVista Resort</b> offers world-class amenities, breathtaking ocean views, and exceptional hospitality. Enjoy our <b>infinity pool</b>, <b>gourmet dining</b>, and relaxing <b>spa</b> for an unforgettable stay.<br/><br/>
+<b>Contact:</b> +94 77 123 4567 | +94 11 234 5678<br/>
+<b>Email:</b> info@luxevista.com<br/>
+<b>Address:</b> 123 Paradise Road, Galle, Sri Lanka
+]]></string>
+    <string-array name="sort_price_options">
+        <item>Price: Low to High</item>
+        <item>Price: High to Low</item>
+    </string-array>
+</resources>

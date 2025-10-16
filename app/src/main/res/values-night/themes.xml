@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for dark mode. -->
+    <style name="Base.Theme.LuxeVistaResort" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#0D47A1</item> <!-- Darkest Blue -->
+        <item name="colorPrimaryVariant">#1565C0</item> <!-- Dark Blue -->
+        <item name="colorAccent">#64B5F6</item> <!-- Light Blue -->
+        <item name="android:colorBackground">#121A2B</item> <!-- Deep Blue Background -->
+        <item name="cardBackgroundColor">#1A237E</item> <!-- Deep Blue for cards -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+</resources>

@@ -1,0 +1,33 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Android artifacts
+*.apk
+*.ap_
+
+# Keystores (do NOT commit secrets)
+*.keystore
+*.jks
+
+# Crash logs
+hs_err_pid*.log
+replay_pid*.log
+
+# Editors
+.vscode/
+
+# If you decide to NOT commit Firebase config, uncomment the next line:
+# app/google-services.json
+local.properties
